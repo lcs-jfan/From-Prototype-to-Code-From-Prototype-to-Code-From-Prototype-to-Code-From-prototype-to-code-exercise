@@ -9,13 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            VStack {
+            }
+            .padding()
+            .navigationTitle("Piper")
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        
+                    } label: {
+                        Text("\(Image(systemName: "chevron.backward"))Pets")
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button{
+    
+                    } label: {
+                        Text ("+")
+                            .font(.system(size: 25))
+                            .foregroundStyle(.black)
+    
+                    }
+
+                }
+            }
+            
+            Spacer()
+            
+            
+            
+
         }
-        .padding()
+
     }
 }
 
