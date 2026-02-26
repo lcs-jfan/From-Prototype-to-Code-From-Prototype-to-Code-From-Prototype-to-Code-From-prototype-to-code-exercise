@@ -49,10 +49,12 @@ struct ContentView: View {
 
                 }
             }
-            VStack {
+            VStack() {
                 PlannedFeedingsList(time: "7AM", duration: "Daily", name: "Kibble", amount: "2 scoops")
-
-
+                PlannedFeedingsList(time: "11AM", duration: "Daily", name: "Kibble", amount: "2 scoops")
+                PlannedFeedingsList(time: "3PM", duration: "Daily", name: "Kibble", amount: "2 scoops")
+                PlannedFeedingsList(time: "7PM", duration: "Daily", name: "Kibble", amount: "2 scoops")
+                PlannedFeedingsList(time: "August", duration: "Annually", name: "Puppucino", amount: "1 cup")
             }
             .padding()
             

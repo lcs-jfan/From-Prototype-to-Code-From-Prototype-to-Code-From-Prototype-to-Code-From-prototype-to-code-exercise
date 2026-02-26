@@ -16,14 +16,14 @@ struct PlannedFeedingsList: View {
     
     var body: some View {
         HStack {
-            VStack {
+            VStack(alignment: .leading) {
                 Text(time)
                     .font(.title3)
                     .bold()
                 Text(duration)
             }
             Spacer()
-            VStack {
+            VStack(alignment: .trailing) {
                 Text(name)
                     .bold()
                 Text(amount)
